@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #btn {position: absolute;}
+  </style>
+</head>
+<body>
+  <button id="btn">Đừng bắt tôi!</button>
+  <script>
+    const btn = document.getElementById('btn');
+    btn.onmouseover = () => {
+      btn.style.left = Math.random() * window.innerWidth + "px";
+      btn.style.top = Math.random() * window.innerHeight + "px";
+    };
+  </script>
+</body>
+</html>
